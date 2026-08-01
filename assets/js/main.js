@@ -1,38 +1,24 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const year = document.getElementById("year");
-  if (year) year.textContent = new Date().getFullYear();
 
-  const menuButton = document.querySelector(".menu-button");
-  const nav = document.querySelector(".main-nav");
-
-  if (menuButton && nav) {
-    menuButton.addEventListener("click", () => {
-      const open = nav.classList.toggle("open");
-      menuButton.setAttribute("aria-expanded", String(open));
-    });
-  }
-
-  document.querySelectorAll("[data-email-form]").forEach((form) => {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      const recipient = form.dataset.recipient;
-      if (!recipient || recipient.includes("YOUR_EMAIL")) {
-        alert("Please replace YOUR_EMAIL@example.com in this page with the Foundation's official email address.");
-        return;
-      }
-
-      const values = new FormData(form);
-      const lines = [];
-      values.forEach((value, key) => lines.push(`${key}: ${value}`));
-
-      const subject = encodeURIComponent(
-        document.title.startsWith("Volunteer")
-          ? "Volunteer Registration"
-          : "Partnership Enquiry"
-      );
-      const body = encodeURIComponent(lines.join("\n\n"));
-      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
-    });
+document.addEventListener("DOMContentLoaded",()=>{
+ document.querySelectorAll("[data-year]").forEach(el=>el.textContent=new Date().getFullYear());
+ const btn=document.querySelector(".menu-toggle"),menu=document.querySelector(".site-menu");
+ if(btn&&menu){
+  btn.addEventListener("click",()=>{const open=menu.classList.toggle("open");btn.setAttribute("aria-expanded",String(open));});
+  menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{menu.classList.remove("open");btn.setAttribute("aria-expanded","false");}));
+ }
+ document.querySelectorAll("[data-email-form]").forEach(form=>{
+  form.addEventListener("submit",e=>{
+   e.preventDefault();
+   const recipient=form.dataset.recipient;
+   const status=form.querySelector(".form-status");
+   if(!recipient||recipient.includes("YOUR_EMAIL")){
+    if(status){status.textContent="Replace YOUR_EMAIL@example.com with the Foundation's official email address before publishing.";status.classList.add("show");}
+    return;
+   }
+   const data=new FormData(form),lines=[];
+   data.forEach((v,k)=>lines.push(`${k}: ${v}`));
+   const title=document.title.split("|")[0].trim();
+   window.location.href=`mailto:${recipient}?subject=${encodeURIComponent(title+" Website Enquiry")}&body=${encodeURIComponent(lines.join("\n\n"))}`;
   });
+ });
 });
