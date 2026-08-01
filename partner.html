@@ -1,85 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Submit a partnership enquiry to Quality Care for All Foundation.">
-  <title>Partner With Us | Quality Care for All Foundation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Our partners and partnership application.">
+  <meta name="theme-color" content="#0879cf">
+  <title>Partners | Quality Care for All Foundation</title>
+  <link rel="icon" href="assets/images/logo.webp">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">
-        <img src="assets/images/quality-care-logo.png" alt="Foundation logo">
-        <span><strong>Quality Care for All Foundation</strong><small>NGO Arm of CNU Medical Institute</small></span>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Quality Care for All Foundation home">
+      <img src="assets/images/logo.webp" alt="">
+      <span>
+        <strong>Quality Care for All Foundation</strong>
+        <small>NGO arm of CNU Medical Institute</small>
+      </span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+      <span class="sr-only">Open navigation</span><span></span><span></span><span></span>
+    </button>
+    <nav id="site-menu" class="site-menu" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#programmes">Programmes</a>
+      <a href="partner.html">Partners</a>
+      <a href="news-events.html">News & Events</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-volunteer" href="volunteer.html">Volunteer</a>
+      <a class="nav-donate" href="YOUR_DONATION_LINK_HERE" target="_blank" rel="noopener">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-hero">
+  <div class="container narrow centered">
+    <p class="eyebrow">Partnerships</p>
+    <h1>Working together for healthier communities.</h1>
+    <p class="lead">Our partners strengthen our reach through expertise, shared resources, referrals, sponsorship and community access.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <header class="section-heading centered">
+      <p class="eyebrow">Existing Relationships</p>
+      <h2>Our affiliated and partner organisations</h2>
+      <p>Replace the placeholder links and logo files with each organisation's confirmed official information before publication.</p>
+    </header>
+    <div class="partner-grid">
+      <a class="partner-card" href="https://www.cnumedical.com/" target="_blank" rel="noopener">
+        <img src="assets/images/partners/cnu.webp" alt="CNU Medical Institute">
+        <div><h3>CNU Medical Institute</h3><p>Institutional affiliate and healthcare education partner.</p><span>Visit website →</span></div>
       </a>
-      <a class="back-link" href="index.html">← Home</a>
+      <a class="partner-card" href="YOUR_SPEAKOUT_WEBSITE_HERE" target="_blank" rel="noopener">
+        <img src="assets/images/partners/so.webp" alt="SpeakOut Mental Health Outreach">
+        <div><h3>SpeakOut Mental Health Outreach</h3><p>Mental-health awareness and community engagement partner.</p><span>Visit website →</span></div>
+      </a>
+      <a class="partner-card" href="YOUR_SYNIA_WEBSITE_HERE" target="_blank" rel="noopener">
+        <img src="assets/images/partners/saf.webp" alt="Synia Aid Foundation">
+        <div><h3>Synia Aid Foundation</h3><p>Humanitarian outreach and community-support partner.</p><span>Visit website →</span></div>
+      </a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main class="form-page">
-    <section class="container form-layout">
-      <div class="form-intro">
-        <p class="eyebrow">Partnership Application</p>
-        <h1>Let us build meaningful impact together.</h1>
-        <p>
-          Submit an initial partnership enquiry. We welcome organisations whose goals
-          align with healthcare access, education and community development.
-        </p>
+<section id="application" class="section section-soft">
+  <div class="container form-layout">
+    <div class="form-intro">
+      <p class="eyebrow">Partnership Application</p>
+      <h2>Propose a collaboration.</h2>
+      <p>We welcome NGOs, hospitals, companies, schools, universities, public institutions, professional bodies and community organisations.</p>
+      <div class="note-card"><strong>Possible partnership areas</strong><p>Medical outreach, equipment and supplies, grants, sponsorship, volunteer mobilisation, health education, research, referrals and technical assistance.</p></div>
+    </div>
+    <form class="application-form" data-email-form data-recipient="YOUR_EMAIL@example.com">
+      <div class="form-status" role="status" aria-live="polite"></div>
+      <label>Organisation name<input type="text" name="Organisation" required></label>
+      <div class="two-column">
+        <label>Contact person's name<input type="text" name="Contact person" required></label>
+        <label>Official email<input type="email" name="Email" required></label>
       </div>
+      <div class="two-column">
+        <label>Phone / WhatsApp<input type="tel" name="Phone" required></label>
+        <label>Website<input type="url" name="Website" placeholder="https://"></label>
+      </div>
+      <label>Organisation type
+        <select name="Organisation type" required>
+          <option value="">Select one</option><option>NGO or foundation</option><option>Hospital or healthcare provider</option><option>School or university</option><option>Government institution</option><option>Corporate organisation</option><option>Professional association</option><option>Community or faith-based organisation</option><option>Other</option>
+        </select>
+      </label>
+      <label>Proposed partnership<textarea name="Proposed partnership" rows="6" required></textarea></label>
+      <label>Resources or support your organisation can provide<textarea name="Contribution" rows="5" required></textarea></label>
+      <button class="button button-primary" type="submit">Submit Partnership Enquiry</button>
+    </form>
+  </div>
+</section>
+</main>
 
-      <form class="application-form" data-email-form data-recipient="YOUR_EMAIL@example.com">
-        <label>Organisation name
-          <input type="text" name="Organisation" required>
-        </label>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/images/logo.webp" alt="">
+      <div>
+        <strong>Quality Care for All Foundation</strong>
+        <p>NGO arm of CNU Medical Institute</p>
+      </div>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <a href="index.html#about">About</a>
+      <a href="index.html#programmes">Programmes</a>
+      <a href="partner.html">Partners</a>
+      <a href="news-events.html">News & Events</a>
+    </div>
+    <div>
+      <h3>Get Involved</h3>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="partner.html#application">Partner with us</a>
+      <a href="YOUR_DONATION_LINK_HERE" target="_blank" rel="noopener">Donate</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="contact.html">Contact page</a>
+      <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+      <a href="https://www.cnumedical.com/" target="_blank" rel="noopener">CNU Medical Institute</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <small>© <span data-year></span> Quality Care for All Foundation. All rights reserved.</small>
+    <a href="privacy.html">Privacy</a>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
 
-        <div class="two-column">
-          <label>Contact person's name
-            <input type="text" name="Contact person" required>
-          </label>
-          <label>Official email
-            <input type="email" name="Email" required>
-          </label>
-        </div>
-
-        <div class="two-column">
-          <label>Phone / WhatsApp
-            <input type="tel" name="Phone" required>
-          </label>
-          <label>Website or social page
-            <input type="url" name="Website" placeholder="https://">
-          </label>
-        </div>
-
-        <label>Type of organisation
-          <select name="Organisation type" required>
-            <option value="">Select one</option>
-            <option>NGO or charitable foundation</option>
-            <option>Hospital or healthcare provider</option>
-            <option>School or university</option>
-            <option>Government institution</option>
-            <option>Corporate organisation</option>
-            <option>Professional association</option>
-            <option>Community or faith-based organisation</option>
-            <option>Other</option>
-          </select>
-        </label>
-
-        <label>Proposed area of partnership
-          <textarea name="Proposed partnership" rows="6" required></textarea>
-        </label>
-
-        <label>What support or contribution can your organisation provide?
-          <textarea name="Contribution" rows="5" required></textarea>
-        </label>
-
-        <button class="button button-primary" type="submit">Submit Partnership Enquiry</button>
-        <p class="form-note">Before publishing, replace <strong>YOUR_EMAIL@example.com</strong> in this file with the Foundation's email.</p>
-      </form>
-    </section>
-  </main>
-
-  <script src="assets/js/main.js"></script>
 </body>
 </html>

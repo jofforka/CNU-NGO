@@ -1,81 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Register as a volunteer with Quality Care for All Foundation.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register as a Foundation volunteer.">
+  <meta name="theme-color" content="#0879cf">
   <title>Volunteer | Quality Care for All Foundation</title>
+  <link rel="icon" href="assets/images/logo.webp">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">
-        <img src="assets/images/quality-care-logo.png" alt="Foundation logo">
-        <span><strong>Quality Care for All Foundation</strong><small>NGO Arm of CNU Medical Institute</small></span>
-      </a>
-      <a class="back-link" href="index.html">← Home</a>
-    </div>
-  </header>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <main class="form-page">
-    <section class="container form-layout">
-      <div class="form-intro">
-        <p class="eyebrow">Volunteer Registration</p>
-        <h1>Use your skills to support healthier communities.</h1>
-        <p>
-          Complete this form to express your interest. The Foundation will contact you
-          when a suitable opportunity becomes available.
-        </p>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Quality Care for All Foundation home">
+      <img src="assets/images/logo.webp" alt="">
+      <span>
+        <strong>Quality Care for All Foundation</strong>
+        <small>NGO arm of CNU Medical Institute</small>
+      </span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+      <span class="sr-only">Open navigation</span><span></span><span></span><span></span>
+    </button>
+    <nav id="site-menu" class="site-menu" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#programmes">Programmes</a>
+      <a href="partner.html">Partners</a>
+      <a href="news-events.html">News & Events</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-volunteer" href="volunteer.html">Volunteer</a>
+      <a class="nav-donate" href="YOUR_DONATION_LINK_HERE" target="_blank" rel="noopener">Donate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-hero"><div class="container narrow centered"><p class="eyebrow">Volunteer</p><h1>Use your skills to support healthier communities.</h1><p class="lead">Healthcare professionals, students and community volunteers are welcome to express interest.</p></div></section>
+<section class="section section-soft"><div class="container form-layout">
+<div class="form-intro"><p class="eyebrow">Registration</p><h2>Join our volunteer network.</h2><p>We will contact you when an opportunity matches your location, skills and availability.</p><div class="note-card"><strong>Volunteer areas</strong><p>Clinical services, nursing, mental-health support, media, logistics, administration, fundraising and community mobilisation.</p></div></div>
+<form class="application-form" data-email-form data-recipient="YOUR_EMAIL@example.com">
+<div class="form-status" role="status" aria-live="polite"></div>
+<label>Full name<input type="text" name="Full name" required></label>
+<div class="two-column"><label>Email<input type="email" name="Email" required></label><label>Phone / WhatsApp<input type="tel" name="Phone" required></label></div>
+<label>Location<input type="text" name="Location" required></label>
+<label>Area of interest<select name="Area of interest" required><option value="">Select one</option><option>Medical or clinical services</option><option>Nursing or caregiving</option><option>Mental health support</option><option>Community mobilisation</option><option>Media and communications</option><option>Logistics and administration</option><option>Fundraising and partnerships</option><option>Other</option></select></label>
+<label>Tell us how you would like to support<textarea name="How I would like to support" rows="6" required></textarea></label>
+<label class="check-label"><input type="checkbox" required><span>I consent to being contacted about volunteer opportunities.</span></label>
+<button class="button button-primary" type="submit">Submit Registration</button>
+</form></div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/images/logo.webp" alt="">
+      <div>
+        <strong>Quality Care for All Foundation</strong>
+        <p>NGO arm of CNU Medical Institute</p>
       </div>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <a href="index.html#about">About</a>
+      <a href="index.html#programmes">Programmes</a>
+      <a href="partner.html">Partners</a>
+      <a href="news-events.html">News & Events</a>
+    </div>
+    <div>
+      <h3>Get Involved</h3>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="partner.html#application">Partner with us</a>
+      <a href="YOUR_DONATION_LINK_HERE" target="_blank" rel="noopener">Donate</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="contact.html">Contact page</a>
+      <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a>
+      <a href="https://www.cnumedical.com/" target="_blank" rel="noopener">CNU Medical Institute</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <small>© <span data-year></span> Quality Care for All Foundation. All rights reserved.</small>
+    <a href="privacy.html">Privacy</a>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
 
-      <form class="application-form" data-email-form data-recipient="YOUR_EMAIL@example.com">
-        <label>Full name
-          <input type="text" name="Full name" required>
-        </label>
-
-        <div class="two-column">
-          <label>Email address
-            <input type="email" name="Email" required>
-          </label>
-          <label>Phone / WhatsApp
-            <input type="tel" name="Phone" required>
-          </label>
-        </div>
-
-        <label>Location
-          <input type="text" name="Location" placeholder="City, State or Country" required>
-        </label>
-
-        <label>Professional background or area of interest
-          <select name="Area of interest" required>
-            <option value="">Select one</option>
-            <option>Medical or clinical services</option>
-            <option>Nursing or caregiving</option>
-            <option>Mental health support</option>
-            <option>Community mobilisation</option>
-            <option>Media and communications</option>
-            <option>Logistics and administration</option>
-            <option>Fundraising and partnerships</option>
-            <option>Other</option>
-          </select>
-        </label>
-
-        <label>Tell us how you would like to support
-          <textarea name="How I would like to support" rows="6" required></textarea>
-        </label>
-
-        <label class="check-label">
-          <input type="checkbox" required>
-          <span>I agree that the Foundation may contact me about volunteer opportunities.</span>
-        </label>
-
-        <button class="button button-primary" type="submit">Submit Registration</button>
-        <p class="form-note">Before publishing, replace <strong>YOUR_EMAIL@example.com</strong> in this file with the Foundation's email.</p>
-      </form>
-    </section>
-  </main>
-
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
