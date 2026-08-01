@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",()=>{
    e.preventDefault();
    const recipient=form.dataset.recipient;
    const status=form.querySelector(".form-status");
-   if(!recipient||recipient.includes("YOUR_EMAIL")){
+   if(!recipient||recipient.includes("ngo@cnumedical.com")){
     if(status){status.textContent="Replace YOUR_EMAIL@example.com with the Foundation's official email address before publishing.";status.classList.add("show");}
     return;
    }
