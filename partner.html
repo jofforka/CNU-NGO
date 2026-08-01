@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a partnership enquiry to Quality Care for All Foundation.">
+  <title>Partner With Us | Quality Care for All Foundation</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/images/foundation-logo.jpg" alt="Foundation logo">
+        <span><strong>Quality Care for All Foundation</strong><small>NGO Arm of CNU Medical Institute</small></span>
+      </a>
+      <a class="back-link" href="index.html">← Home</a>
+    </div>
+  </header>
+
+  <main class="form-page">
+    <section class="container form-layout">
+      <div class="form-intro">
+        <p class="eyebrow">Partnership Application</p>
+        <h1>Let us build meaningful impact together.</h1>
+        <p>
+          Submit an initial partnership enquiry. We welcome organisations whose goals
+          align with healthcare access, education and community development.
+        </p>
+      </div>
+
+      <form class="application-form" data-email-form data-recipient="YOUR_EMAIL@example.com">
+        <label>Organisation name
+          <input type="text" name="Organisation" required>
+        </label>
+
+        <div class="two-column">
+          <label>Contact person's name
+            <input type="text" name="Contact person" required>
+          </label>
+          <label>Official email
+            <input type="email" name="Email" required>
+          </label>
+        </div>
+
+        <div class="two-column">
+          <label>Phone / WhatsApp
+            <input type="tel" name="Phone" required>
+          </label>
+          <label>Website or social page
+            <input type="url" name="Website" placeholder="https://">
+          </label>
+        </div>
+
+        <label>Type of organisation
+          <select name="Organisation type" required>
+            <option value="">Select one</option>
+            <option>NGO or charitable foundation</option>
+            <option>Hospital or healthcare provider</option>
+            <option>School or university</option>
+            <option>Government institution</option>
+            <option>Corporate organisation</option>
+            <option>Professional association</option>
+            <option>Community or faith-based organisation</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label>Proposed area of partnership
+          <textarea name="Proposed partnership" rows="6" required></textarea>
+        </label>
+
+        <label>What support or contribution can your organisation provide?
+          <textarea name="Contribution" rows="5" required></textarea>
+        </label>
+
+        <button class="button button-primary" type="submit">Submit Partnership Enquiry</button>
+        <p class="form-note">Before publishing, replace <strong>YOUR_EMAIL@example.com</strong> in this file with the Foundation's email.</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

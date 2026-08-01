@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register as a volunteer with Quality Care for All Foundation.">
+  <title>Volunteer | Quality Care for All Foundation</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/images/foundation-logo.jpg" alt="Foundation logo">
+        <span><strong>Quality Care for All Foundation</strong><small>NGO Arm of CNU Medical Institute</small></span>
+      </a>
+      <a class="back-link" href="index.html">← Home</a>
+    </div>
+  </header>
+
+  <main class="form-page">
+    <section class="container form-layout">
+      <div class="form-intro">
+        <p class="eyebrow">Volunteer Registration</p>
+        <h1>Use your skills to support healthier communities.</h1>
+        <p>
+          Complete this form to express your interest. The Foundation will contact you
+          when a suitable opportunity becomes available.
+        </p>
+      </div>
+
+      <form class="application-form" data-email-form data-recipient="YOUR_EMAIL@example.com">
+        <label>Full name
+          <input type="text" name="Full name" required>
+        </label>
+
+        <div class="two-column">
+          <label>Email address
+            <input type="email" name="Email" required>
+          </label>
+          <label>Phone / WhatsApp
+            <input type="tel" name="Phone" required>
+          </label>
+        </div>
+
+        <label>Location
+          <input type="text" name="Location" placeholder="City, State or Country" required>
+        </label>
+
+        <label>Professional background or area of interest
+          <select name="Area of interest" required>
+            <option value="">Select one</option>
+            <option>Medical or clinical services</option>
+            <option>Nursing or caregiving</option>
+            <option>Mental health support</option>
+            <option>Community mobilisation</option>
+            <option>Media and communications</option>
+            <option>Logistics and administration</option>
+            <option>Fundraising and partnerships</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label>Tell us how you would like to support
+          <textarea name="How I would like to support" rows="6" required></textarea>
+        </label>
+
+        <label class="check-label">
+          <input type="checkbox" required>
+          <span>I agree that the Foundation may contact me about volunteer opportunities.</span>
+        </label>
+
+        <button class="button button-primary" type="submit">Submit Registration</button>
+        <p class="form-note">Before publishing, replace <strong>YOUR_EMAIL@example.com</strong> in this file with the Foundation's email.</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
